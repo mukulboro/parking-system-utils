@@ -1,3 +1,5 @@
 Dataset
 Dataset/
 .notes
+__pycache__
+__pycache__/
