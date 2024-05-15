@@ -12,17 +12,23 @@ def filter_annotations(anno:list)->list:
             
             labels.append({
                 "label": l["rectanglelabels"][0],
-                "x_max": true_x,
-                "y_max": true_y,
-                "x_min": true_x+true_bb_w,
-                "y_min": true_y+true_bb_h,
-                "bb_h": true_bb_h,
-                "bb_w": true_bb_w
+                # "x_max": true_x,
+                # "y_max": true_y,
+                # "x_min": true_x+true_bb_w,
+                # "y_min": true_y+true_bb_h,
+                # "bb_h": true_bb_h,
+                # "bb_w": true_bb_w,
+                "n_x_max": (true_x)/w,
+                "n_y_max": (true_y)/h,
+                "n_x_min": (true_x+true_bb_w)/w,
+                "n_y_min": (true_y+true_bb_h)/h,
+                "n_bb_h": true_bb_h/h,
+                "n_bb_w": true_bb_w/w,
             })
         filtered_annos.append({
             "img_name": image_name,
-            "width": w,
-            "height": h,
+            # "width": w,
+            # "height": h,
             "annotations": labels
         })
     return filtered_annos

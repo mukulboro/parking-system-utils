@@ -3,3 +3,7 @@ Dataset/
 .notes
 __pycache__
 __pycache__/
+augmented_data
+augmented_data/
+lp-yolo/
+lp-yolo

@@ -2,8 +2,11 @@ import numpy as np
 import random
 import cv2 as cv
 
+def resize(img:np.ndarray, height=483, width=483)->np.ndarray:
+    return cv.resize(img, (height, width))
+
 def blur(img:np.ndarray)->np.ndarray:
-    k = random.randint(15,25)
+    k = random.randint(1,15)
     return cv.blur(img, ksize=(k,k))
 
 def noise(img:np.ndarray)->np.ndarray:
