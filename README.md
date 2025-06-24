@@ -4,7 +4,7 @@
 
 This project is a comprehensive Automatic Number Plate Recognition (ANPR) system specifically designed to handle the unique challenges of vehicle number plates in Nepal. Unlike many regions with a single standard, Nepal utilizes **three distinct number plate formats** (Embossed, Provincial, and Regional), making localization and OCR a complex task.
 
-This system leverages a custom-trained **YOLOv7** model to first detect and classify the type of number plate in an image. It then applies a robust computer vision preprocessing pipeline to enhance the plate for accurate text extraction using **EasyOCR**.
+This system leverages a custom-trained **YOLO** model to first detect and classify the type of number plate in an image. It then applies a robust computer vision preprocessing pipeline to enhance the plate for accurate text extraction using **EasyOCR**.
 
 ## 🎯 The Challenge: Diverse Nepali Number Plates
 
