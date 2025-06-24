@@ -32,7 +32,7 @@ This project was built to reliably handle all three types.
 The system follows a clear, multi-stage process to go from a raw vehicle image to extracted text:
 
 1.  **Input Image:** The system takes an image of a vehicle as input.
-2.  **Plate Localization & Classification (YOLOv7):** The custom YOLO model scans the image to find the number plate. It draws a bounding box around the plate and simultaneously classifies it as `Embossed`, `Provincial`, or `Regional`.
+2.  **Plate Localization & Classification:** The custom YOLO model scans the image to find the number plate. It draws a bounding box around the plate and simultaneously classifies it as `Embossed`, `Provincial`, or `Regional`.
 3.  **Image Cropping & Preprocessing:** The area defined by the bounding box is cropped. This sub-image is then passed through the preprocessing pipeline:
     -   **Deskewing:** The image is rotated to ensure the plate is perfectly horizontal.
     -   **Grayscale Conversion:** The image is converted to monochrome to simplify feature detection.
